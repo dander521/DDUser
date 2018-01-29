@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="DTOrderDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红烧排骨套餐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7z-ye-xo7">
+                        <rect key="frame" x="78" y="16" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个主菜加两个配菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0W-pB-nhk">
+                        <rect key="frame" x="78" y="47" width="129" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhU-rd-KJZ">
+                        <rect key="frame" x="296" y="47" width="16" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥31.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oJ-BD-hmD">
+                        <rect key="frame" x="265" y="17" width="47" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_chenggong" translatesAutoresizingMaskIntoConstraints="NO" id="NsH-lZ-IfM">
+                        <rect key="frame" x="14" y="11" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="4JO-fH-jvf"/>
+                            <constraint firstAttribute="width" constant="60" id="7hS-M9-eeS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PhU-rd-KJZ" firstAttribute="centerY" secondItem="B0W-pB-nhk" secondAttribute="centerY" id="E9g-V5-n2N"/>
+                    <constraint firstItem="B0W-pB-nhk" firstAttribute="top" secondItem="g7z-ye-xo7" secondAttribute="bottom" constant="10" id="F7j-y8-esm"/>
+                    <constraint firstItem="g7z-ye-xo7" firstAttribute="leading" secondItem="NsH-lZ-IfM" secondAttribute="trailing" constant="4" id="G21-OQ-BoV"/>
+                    <constraint firstItem="0oJ-BD-hmD" firstAttribute="centerY" secondItem="g7z-ye-xo7" secondAttribute="centerY" id="G7x-9A-xY7"/>
+                    <constraint firstAttribute="trailing" secondItem="0oJ-BD-hmD" secondAttribute="trailing" constant="8" id="Gy6-uN-KZX"/>
+                    <constraint firstItem="PhU-rd-KJZ" firstAttribute="top" secondItem="0oJ-BD-hmD" secondAttribute="bottom" constant="10.5" id="Ra4-Hy-8Ts"/>
+                    <constraint firstItem="NsH-lZ-IfM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="gWl-65-c7q"/>
+                    <constraint firstItem="B0W-pB-nhk" firstAttribute="leading" secondItem="NsH-lZ-IfM" secondAttribute="trailing" constant="4" id="gaf-cz-AJm"/>
+                    <constraint firstItem="g7z-ye-xo7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="l9T-ux-WLX"/>
+                    <constraint firstItem="NsH-lZ-IfM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pEd-LB-niI"/>
+                    <constraint firstAttribute="trailing" secondItem="PhU-rd-KJZ" secondAttribute="trailing" constant="8" id="wzi-Wp-0aY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="goodsImageView" destination="NsH-lZ-IfM" id="cGO-jX-Mly"/>
+                <outlet property="nameLabel" destination="g7z-ye-xo7" id="PPe-IP-Qea"/>
+                <outlet property="priceLabel" destination="0oJ-BD-hmD" id="mDw-fU-G7g"/>
+                <outlet property="saleLabel" destination="PhU-rd-KJZ" id="2ow-4C-X8f"/>
+                <outlet property="subNameLabel" destination="B0W-pB-nhk" id="d7Q-eI-TxH"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="-22"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_chenggong" width="88" height="88"/>
+    </resources>
+</document>

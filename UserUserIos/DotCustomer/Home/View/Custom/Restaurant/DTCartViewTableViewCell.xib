@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DTCartViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红烧牛肉套餐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ua-0j-xeO">
+                        <rect key="frame" x="12" y="13.5" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJk-RL-mwa">
+                        <rect key="frame" x="274" y="6" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="g1O-YC-JQF"/>
+                            <constraint firstAttribute="height" constant="30" id="sZP-d8-0Ux"/>
+                        </constraints>
+                        <state key="normal" image="btn_jia_xiao"/>
+                        <connections>
+                            <action selector="touchPlusBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uoa-Xy-GDt"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv8-KZ-sEd">
+                        <rect key="frame" x="250.5" y="12" width="15.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcF-aM-qat">
+                        <rect key="frame" x="212.5" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="IW0-VT-1nX"/>
+                            <constraint firstAttribute="width" constant="30" id="wzK-bU-NrN"/>
+                        </constraints>
+                        <state key="normal" image="btn_jian_xiao"/>
+                        <connections>
+                            <action selector="touchMinusBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gam-kc-plV"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0.01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lq-P6-j4V">
+                        <rect key="frame" x="168" y="14" width="38.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BJk-RL-mwa" secondAttribute="trailing" constant="16" id="48B-O5-6eT"/>
+                    <constraint firstItem="8lq-P6-j4V" firstAttribute="centerY" secondItem="bcF-aM-qat" secondAttribute="centerY" id="JSL-PV-iEX"/>
+                    <constraint firstItem="cv8-KZ-sEd" firstAttribute="leading" secondItem="bcF-aM-qat" secondAttribute="trailing" constant="8" id="NGn-Ua-dzh"/>
+                    <constraint firstItem="BJk-RL-mwa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aDS-Np-7oT"/>
+                    <constraint firstItem="bcF-aM-qat" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bSd-YM-NB5"/>
+                    <constraint firstItem="cv8-KZ-sEd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="daI-gc-oGj"/>
+                    <constraint firstItem="BJk-RL-mwa" firstAttribute="leading" secondItem="cv8-KZ-sEd" secondAttribute="trailing" constant="8" id="e6d-dC-ASl"/>
+                    <constraint firstItem="4Ua-0j-xeO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gZU-Fv-lka"/>
+                    <constraint firstItem="4Ua-0j-xeO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="mjZ-5q-Xz3"/>
+                    <constraint firstItem="bcF-aM-qat" firstAttribute="leading" secondItem="8lq-P6-j4V" secondAttribute="trailing" constant="6" id="wxT-3j-P9d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="countLabel" destination="cv8-KZ-sEd" id="pAD-aW-dWX"/>
+                <outlet property="nameLabel" destination="4Ua-0j-xeO" id="08L-ru-fle"/>
+                <outlet property="priceLabel" destination="8lq-P6-j4V" id="okQ-Ln-4G2"/>
+            </connections>
+            <point key="canvasLocation" x="-259" y="43"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_jia_xiao" width="20" height="20"/>
+        <image name="btn_jian_xiao" width="20" height="20"/>
+    </resources>
+</document>

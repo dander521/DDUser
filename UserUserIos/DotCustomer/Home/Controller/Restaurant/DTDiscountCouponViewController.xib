@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DTDiscountCouponViewController">
+            <connections>
+                <outlet property="buyBtn" destination="5IG-rS-1OK" id="xCe-Ch-agJ"/>
+                <outlet property="fiftyBtn" destination="5Gq-hM-5wp" id="ytp-zB-sDg"/>
+                <outlet property="oneBtn" destination="iJ9-F7-UsJ" id="Zcs-ah-k46"/>
+                <outlet property="threeBtn" destination="Fyv-v0-APA" id="TDR-MR-nGZ"/>
+                <outlet property="twoBtn" destination="7Bo-Se-CRx" id="rOd-Sm-T0G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gq-hM-5wp">
+                    <rect key="frame" x="24" y="84" width="151.5" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0ag-hV-KbQ"/>
+                    </constraints>
+                    <state key="normal" title="50 元">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="touchBtns:" destination="-1" eventType="touchUpInside" id="yZC-q8-KMB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ9-F7-UsJ">
+                    <rect key="frame" x="199.5" y="84" width="151.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="mkB-Zi-EFJ"/>
+                    </constraints>
+                    <state key="normal" title="100 元">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="touchBtns:" destination="-1" eventType="touchUpInside" id="lck-iq-SoX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-Se-CRx">
+                    <rect key="frame" x="24" y="154" width="151.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8AR-SM-7uB"/>
+                    </constraints>
+                    <state key="normal" title="200 元">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="touchBtns:" destination="-1" eventType="touchUpInside" id="UZf-VV-reA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IG-rS-1OK">
+                    <rect key="frame" x="12" y="272" width="351" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Qou-2I-kDY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确认购买">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="touchBtns:" destination="-1" eventType="touchUpInside" id="G6B-Nd-2kq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyv-v0-APA">
+                    <rect key="frame" x="199.5" y="154" width="151.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0UG-By-w4a"/>
+                    </constraints>
+                    <state key="normal" title="300 元">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="touchBtns:" destination="-1" eventType="touchUpInside" id="06P-J6-H6h"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5IG-rS-1OK" firstAttribute="top" secondItem="Fyv-v0-APA" secondAttribute="bottom" constant="68" id="1i4-T1-a3b"/>
+                <constraint firstAttribute="trailing" secondItem="iJ9-F7-UsJ" secondAttribute="trailing" constant="24" id="3If-sv-N5M"/>
+                <constraint firstItem="iJ9-F7-UsJ" firstAttribute="height" secondItem="5Gq-hM-5wp" secondAttribute="height" id="7AG-m0-mAQ"/>
+                <constraint firstItem="Fyv-v0-APA" firstAttribute="width" secondItem="7Bo-Se-CRx" secondAttribute="width" id="CKk-xK-9E3"/>
+                <constraint firstItem="5Gq-hM-5wp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="GTL-gr-79p"/>
+                <constraint firstItem="5Gq-hM-5wp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="Krm-aW-zzY"/>
+                <constraint firstItem="iJ9-F7-UsJ" firstAttribute="width" secondItem="5Gq-hM-5wp" secondAttribute="width" id="MKY-Dv-pEJ"/>
+                <constraint firstItem="Fyv-v0-APA" firstAttribute="top" secondItem="iJ9-F7-UsJ" secondAttribute="bottom" constant="20" id="Rex-dC-GoF"/>
+                <constraint firstItem="7Bo-Se-CRx" firstAttribute="top" secondItem="5Gq-hM-5wp" secondAttribute="bottom" constant="20" id="WHU-zA-eFB"/>
+                <constraint firstAttribute="trailing" secondItem="5IG-rS-1OK" secondAttribute="trailing" constant="12" id="ZBn-Qx-bCR"/>
+                <constraint firstItem="5IG-rS-1OK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="gHM-mT-PmR"/>
+                <constraint firstItem="Fyv-v0-APA" firstAttribute="height" secondItem="7Bo-Se-CRx" secondAttribute="height" id="gT1-pR-mNS"/>
+                <constraint firstItem="Fyv-v0-APA" firstAttribute="leading" secondItem="7Bo-Se-CRx" secondAttribute="trailing" constant="24" id="kKO-mC-3l3"/>
+                <constraint firstItem="iJ9-F7-UsJ" firstAttribute="leading" secondItem="5Gq-hM-5wp" secondAttribute="trailing" constant="24" id="kV5-ct-1Is"/>
+                <constraint firstItem="iJ9-F7-UsJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="lZe-xa-6gw"/>
+                <constraint firstItem="7Bo-Se-CRx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="vdH-JM-ybs"/>
+                <constraint firstAttribute="trailing" secondItem="Fyv-v0-APA" secondAttribute="trailing" constant="24" id="zJZ-La-Lqs"/>
+            </constraints>
+            <point key="canvasLocation" x="-38" y="48"/>
+        </view>
+    </objects>
+</document>

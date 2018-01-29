@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DTRestaurantGoodsDetailViewController">
+            <connections>
+                <outlet property="tableView" destination="5qU-i4-ccb" id="BkO-kN-c6V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5qU-i4-ccb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="api-DN-HHc"/>
+                        <outlet property="delegate" destination="-1" id="A9y-sS-wbt"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fanhui_baise" translatesAutoresizingMaskIntoConstraints="NO" id="ZjS-pV-sRU">
+                    <rect key="frame" x="16" y="31" width="10" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="rHa-Fd-jtd"/>
+                        <constraint firstAttribute="height" constant="20" id="ubJ-Ak-UAI"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7f-eQ-qWH">
+                    <rect key="frame" x="16" y="26" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2rj-wN-ObK"/>
+                        <constraint firstAttribute="width" constant="30" id="u3B-EE-3m6"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYL-dh-xL9">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="VNA-ZC-UyI"/>
+                        <constraint firstAttribute="width" constant="80" id="hgR-Iv-R7U"/>
+                    </constraints>
+                    <connections>
+                        <action selector="touchBackBtn:" destination="-1" eventType="touchUpInside" id="ct4-RE-mbb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y7f-eQ-qWH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="BHb-6a-POc"/>
+                <constraint firstItem="5qU-i4-ccb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ChP-KF-CON"/>
+                <constraint firstItem="5qU-i4-ccb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SSb-fH-3rU"/>
+                <constraint firstItem="sYL-dh-xL9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="USl-xf-KXD"/>
+                <constraint firstAttribute="bottom" secondItem="5qU-i4-ccb" secondAttribute="bottom" id="Y8R-fe-GC4"/>
+                <constraint firstAttribute="trailing" secondItem="5qU-i4-ccb" secondAttribute="trailing" id="Ysu-So-1hd"/>
+                <constraint firstItem="sYL-dh-xL9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZgA-aI-lld"/>
+                <constraint firstItem="y7f-eQ-qWH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="mnw-yy-EEc"/>
+                <constraint firstItem="ZjS-pV-sRU" firstAttribute="centerY" secondItem="y7f-eQ-qWH" secondAttribute="centerY" id="tbz-dF-TVH"/>
+                <constraint firstItem="ZjS-pV-sRU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ufD-Me-4Od"/>
+            </constraints>
+            <point key="canvasLocation" x="66.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fanhui_baise" width="10" height="18"/>
+    </resources>
+</document>
